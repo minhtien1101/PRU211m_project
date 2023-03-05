@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Bullets.cs" />
     <Compile Include="Assets\Scripts\DinoEnemy.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

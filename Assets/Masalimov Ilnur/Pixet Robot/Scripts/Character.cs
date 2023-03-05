@@ -16,6 +16,7 @@ public class Character : MonoBehaviour
 	[SerializeField] float xEndPoint;
 	[SerializeField] float timeFire;
 
+	bool isGetBulletPlayer;
 	bool isShooting;
 	bool isDirectLeft = true;
 	Animator anim;
@@ -27,6 +28,7 @@ public class Character : MonoBehaviour
 
 	void Update()
 	{
+		if (isGetBulletPlayer) return;
 		// saw player
 		if (Vector3.Distance(player.transform.position, transform.position) <= 10f)
 		{
@@ -106,12 +108,23 @@ public class Character : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("BulletPlayer"))
 		{
+			isGetBulletPlayer = true;
 			Debug.Log("Dính đạn của player");
+			// destroy enemy
+			StartCoroutine(StartCountDie());
+			// destroy bullet player
 			Destroy(collision.gameObject);
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
 			Destroy(gameObject);
 		}
+	}
+
+	private IEnumerator StartCountDie()
+	{
+		anim.SetInteger("botAnim", 2);
+		yield return new WaitForSeconds(0.5f);
+		Destroy(gameObject);
 	}
 }

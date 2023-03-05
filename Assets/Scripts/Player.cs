@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
 	Animator animat;
 	bool isJump;
 	bool isShooting;
+	AudioController ausController;
 
 	// Start is called before the first frame update
 	void Start()
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour
 		rigid = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>();
 		animat = GetComponent<Animator>();
+		ausController = FindObjectOfType<AudioController>();
 	}
 
 	// Update is called once per frame
@@ -70,6 +72,7 @@ public class Player : MonoBehaviour
 		// shooting
 		if (Input.GetKeyDown(KeyCode.R) && !isShooting)
 		{
+			ausController.PlayShootingSound();
 			isShooting = true;
 			if (sprite.flipX)
 			{
@@ -105,15 +108,17 @@ public class Player : MonoBehaviour
 		{
 			Debug.Log("Dính đạn địch");
 			Destroy(collision.gameObject);
+			ausController.PlayGameoverSound();
 		}
 		else if (collision.gameObject.CompareTag("Enemy"))
 		{
 			Debug.Log("Đã va chạm với địch");
-
+			ausController.PlayGameoverSound();
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
 			Debug.Log("Đã va chạm với deathzone");
+			ausController.PlayGameoverSound();
 		}
 	}
 }

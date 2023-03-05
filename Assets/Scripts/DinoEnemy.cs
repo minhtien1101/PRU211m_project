@@ -16,6 +16,7 @@ public class DinoEnemy : MonoBehaviour
 	SpriteRenderer sprt;
 	Animator anim;
 	bool isShooting;
+	bool isGetBulletPlayer;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -26,6 +27,7 @@ public class DinoEnemy : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		if (isGetBulletPlayer) return;
 		// saw player
 		if (Vector3.Distance(player.transform.position, transform.position) <= 9f)
 		{
@@ -98,11 +100,21 @@ public class DinoEnemy : MonoBehaviour
 		if (collision.gameObject.CompareTag("BulletPlayer"))
 		{
 			Debug.Log("Dính đạn của player");
+			// destroy bullet player
 			Destroy(collision.gameObject);
+			isGetBulletPlayer = true;
+			// destroy enemy after 0.5s
+			StartCoroutine(StartCountDie());
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
 			Destroy(gameObject);
 		}
+	}
+	private IEnumerator StartCountDie()
+	{
+		anim.SetInteger("dinoAnim", 2);
+		yield return new WaitForSeconds(0.5f);
+		Destroy(gameObject);
 	}
 }

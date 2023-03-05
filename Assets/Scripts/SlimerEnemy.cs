@@ -7,6 +7,7 @@ public class SlimerEnemy : MonoBehaviour
 	[SerializeField] GameObject player;
 	SpriteRenderer sprt;
 	Animator anim;
+	bool isGetBulletPlayer;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -17,6 +18,7 @@ public class SlimerEnemy : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		if (isGetBulletPlayer) return; 
 		if (player.transform.position.x < transform.position.x)
 		{
 			sprt.flipX = false;
@@ -39,12 +41,22 @@ public class SlimerEnemy : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("BulletPlayer"))
 		{
+			isGetBulletPlayer = true;
 			Debug.Log("Dính đạn của player");
+			// destroy bullet player
 			Destroy(collision.gameObject);
+			// destroy enemy after 0.5s
+			StartCoroutine(StartCountDie());
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
 			Destroy(gameObject);
 		}
+	}
+	private IEnumerator StartCountDie()
+	{
+		anim.SetInteger("slimerAnim", 2);
+		yield return new WaitForSeconds(0.5f);
+		Destroy(gameObject);
 	}
 }
