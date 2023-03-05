@@ -58,11 +58,12 @@
   <ItemGroup>
     <Compile Include="Assets\Masalimov Ilnur\Pixet Robot\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\SlimerEnemy.cs" />
     <Compile Include="Assets\Scripts\Bullets.cs" />
     <Compile Include="Assets\Scripts\DinoEnemy.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\AudioController.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

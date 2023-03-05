@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
 	bool isJump;
 	bool isShooting;
 	AudioController ausController;
+	UIManager uiManager;
 
 	// Start is called before the first frame update
 	void Start()
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
 		sprite = GetComponent<SpriteRenderer>();
 		animat = GetComponent<Animator>();
 		ausController = FindObjectOfType<AudioController>();
+		uiManager = FindObjectOfType<UIManager>();
 	}
 
 	// Update is called once per frame
@@ -109,16 +111,22 @@ public class Player : MonoBehaviour
 			Debug.Log("Dính đạn địch");
 			Destroy(collision.gameObject);
 			ausController.PlayGameoverSound();
+			uiManager.ShowPanelGameOver();
+			Time.timeScale = 0;
 		}
 		else if (collision.gameObject.CompareTag("Enemy"))
 		{
 			Debug.Log("Đã va chạm với địch");
 			ausController.PlayGameoverSound();
+			uiManager.ShowPanelGameOver();
+			Time.timeScale = 0;
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
 			Debug.Log("Đã va chạm với deathzone");
 			ausController.PlayGameoverSound();
+			uiManager.ShowPanelGameOver();
+			Time.timeScale = 0;
 		}
 	}
 }
