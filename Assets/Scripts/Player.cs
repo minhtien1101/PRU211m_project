@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,10 +41,14 @@ public class Player : MonoBehaviour
 			if (xDirection < 0)
 			{
 				sprite.flipX = true;
+				float xPos = bulletPositionSpawn.localPosition.x > 0 ? bulletPositionSpawn.localPosition.x * -1 : bulletPositionSpawn.localPosition.x;
+				bulletPositionSpawn.localPosition = new Vector3(xPos, bulletPositionSpawn.localPosition.y, bulletPositionSpawn.localPosition.z);
 			}
 			else
 			{
 				sprite.flipX = false;
+				float xPos = bulletPositionSpawn.localPosition.x > 0 ? bulletPositionSpawn.localPosition.x : bulletPositionSpawn.localPosition.x * -1;
+				bulletPositionSpawn.localPosition = new Vector3(xPos, bulletPositionSpawn.localPosition.y, bulletPositionSpawn.localPosition.z);
 			}
 			transform.position += Vector3.right * xDirection * xSpeed * Time.deltaTime;
 			animat.SetInteger("playerAni", 1);
@@ -67,10 +71,11 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.R) && !isShooting)
 		{
 			isShooting = true;
-			if(sprite.flipX)
+			if (sprite.flipX)
 			{
 				Instantiate(bulletObject, bulletPositionSpawn.position, Quaternion.Euler(new Vector3(0, 0, -90)));
-			} else
+			}
+			else
 			{
 				Instantiate(bulletObject, bulletPositionSpawn.position, Quaternion.Euler(new Vector3(0, 0, 90)));
 			}
@@ -91,6 +96,24 @@ public class Player : MonoBehaviour
 		if (collision.gameObject.CompareTag("Ground"))
 		{
 			isJump = false;
+		}
+	}
+
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
+		if(collision.gameObject.CompareTag("BulletEnemy"))
+		{
+			Debug.Log("Dính đạn địch");
+			Destroy(collision.gameObject);
+		}
+		else if (collision.gameObject.CompareTag("Enemy"))
+		{
+			Debug.Log("Đã va chạm với địch");
+
+		}
+		else if (collision.gameObject.CompareTag("DeathZone"))
+		{
+			Debug.Log("Đã va chạm với deathzone");
 		}
 	}
 }
