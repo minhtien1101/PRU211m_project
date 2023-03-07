@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -101,12 +102,18 @@ public class Player : MonoBehaviour
 		if (collision.gameObject.CompareTag("Ground"))
 		{
 			isJump = false;
+		} else if (collision.gameObject.CompareTag("Enemy"))
+		{
+			Debug.Log("Đã va chạm với địch");
+			ausController.PlayGameoverSound();
+			uiManager.ShowPanelGameOver();
+			Time.timeScale = 0;
 		}
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if(collision.gameObject.CompareTag("BulletEnemy"))
+		if (collision.gameObject.CompareTag("BulletEnemy"))
 		{
 			Debug.Log("Dính đạn địch");
 			Destroy(collision.gameObject);
@@ -114,16 +121,16 @@ public class Player : MonoBehaviour
 			uiManager.ShowPanelGameOver();
 			Time.timeScale = 0;
 		}
-		else if (collision.gameObject.CompareTag("Enemy"))
+		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
-			Debug.Log("Đã va chạm với địch");
+			Debug.Log("Đã va chạm với deathzone");
 			ausController.PlayGameoverSound();
 			uiManager.ShowPanelGameOver();
 			Time.timeScale = 0;
 		}
-		else if (collision.gameObject.CompareTag("DeathZone"))
+		else if (collision.gameObject.CompareTag("Enemy"))
 		{
-			Debug.Log("Đã va chạm với deathzone");
+			Debug.Log("Đã va chạm với địch");
 			ausController.PlayGameoverSound();
 			uiManager.ShowPanelGameOver();
 			Time.timeScale = 0;

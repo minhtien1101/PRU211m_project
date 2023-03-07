@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Masalimov Ilnur\Pixet Robot\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Masalimov Ilnur\Pixet Robot\Scripts\Character2.cs" />
+    <Compile Include="Assets\Scripts\LoadNextLevel.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
     <Compile Include="Assets\Scripts\SlimerEnemy.cs" />
     <Compile Include="Assets\Scripts\Bullets.cs" />

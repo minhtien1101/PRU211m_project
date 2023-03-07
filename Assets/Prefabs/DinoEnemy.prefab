@@ -107,8 +107,8 @@ MonoBehaviour:
   timeFire: 2
   xSpeed: 2
   xSpeedBullet: 8
-  xStartPoint: 1.18
-  xEndPoint: 7
+  xStartPoint: 13.37
+  xEndPoint: 15.57
 --- !u!50 &409885818994093355
 Rigidbody2D:
   serializedVersion: 4
