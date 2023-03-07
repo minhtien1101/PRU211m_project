@@ -43,6 +43,10 @@ public class Player : MonoBehaviour
 		// move left, right
 		if (xDirection < 0 || xDirection > 0)
 		{
+			if (!isJump)
+			{
+				animat.SetInteger("playerAni", 1);
+			}
 			if (xDirection < 0)
 			{
 				sprite.flipX = true;
@@ -56,7 +60,7 @@ public class Player : MonoBehaviour
 				bulletPositionSpawn.localPosition = new Vector3(xPos, bulletPositionSpawn.localPosition.y, bulletPositionSpawn.localPosition.z);
 			}
 			transform.position += Vector3.right * xDirection * xSpeed * Time.deltaTime;
-			animat.SetInteger("playerAni", 1);
+			
 		}
 		// jump
 		if (Input.GetKeyDown(KeyCode.Space) && !isJump)
@@ -102,7 +106,8 @@ public class Player : MonoBehaviour
 		if (collision.gameObject.CompareTag("Ground"))
 		{
 			isJump = false;
-		} else if (collision.gameObject.CompareTag("Enemy"))
+		}
+		else if (collision.gameObject.CompareTag("Enemy"))
 		{
 			Debug.Log("Đã va chạm với địch");
 			ausController.PlayGameoverSound();
