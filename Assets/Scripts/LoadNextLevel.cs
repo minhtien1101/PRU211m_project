@@ -7,20 +7,31 @@ public class LoadNextLevel : MonoBehaviour
 {
 	[SerializeField] float timeDelay;
 	[SerializeField] string nameScene;
-
+	[SerializeField] GameObject winTitle;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.gameObject.CompareTag("Player"))
+		AudioController audio = FindObjectOfType<AudioController>();
+		if (collision.gameObject.CompareTag("Player") && winTitle == null)
 		{
-			Debug.Log("da va cham next level");
 			StartCoroutine(DelayLoadScene());
+		}
+		else if (collision.gameObject.CompareTag("Player") && winTitle != null)
+		{
+			winTitle.SetActive(true);
+			audio.PlayWinSound();
+			Invoke("BackToMenu", timeDelay);
 		}
 	}
 
 	IEnumerator DelayLoadScene()
 	{
 		yield return new WaitForSeconds(timeDelay);
+		SceneManager.LoadScene(nameScene);
+	}
+
+	public void BackToMenu()
+	{
 		SceneManager.LoadScene(nameScene);
 	}
 }

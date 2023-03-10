@@ -7,6 +7,7 @@ public class GameController : MonoBehaviour
 {
 	[SerializeField] GameObject menuPanel;
 	[SerializeField] GameObject tutorialPanel;
+	
 	public void StartGame()
 	{
 		SceneManager.LoadScene("Scene1");
@@ -22,4 +23,6 @@ public class GameController : MonoBehaviour
 		menuPanel.SetActive(true);
 		tutorialPanel.SetActive(false);
 	}
+
+	
 }
