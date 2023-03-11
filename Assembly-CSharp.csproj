@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Masalimov Ilnur\Pixet Robot\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\ParallaxBackground.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Masalimov Ilnur\Pixet Robot\Scripts\Character2.cs" />
     <Compile Include="Assets\Scripts\LoadNextLevel.cs" />
@@ -67,7 +68,6 @@
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
-    <Compile Include="Assets\Scripts\ParallaxBackground.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
