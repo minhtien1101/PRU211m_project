@@ -17,6 +17,7 @@ public class Character2 : MonoBehaviour
 	[SerializeField] Slider sliderBlood;
 	[SerializeField] GameObject borderBlood;
 	[SerializeField] GameObject fillBlood;
+	[SerializeField] List<GameObject> listBoxSecretBullet;
 
 	bool isDie;
 	bool isShooting;
@@ -111,9 +112,9 @@ public class Character2 : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("BulletPlayer"))
 		{
-			
-			Debug.Log("Dính đạn của player");
 			TakeDamage();
+			// destroy bullet player
+			Destroy(collision.gameObject);
 			
 			// destroy enemy
 			if (healthPoint <= 0)
@@ -121,8 +122,6 @@ public class Character2 : MonoBehaviour
 				isDie = true;
 				StartCoroutine(StartCountDie());
 			}
-			// destroy bullet player
-			Destroy(collision.gameObject);
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
@@ -135,6 +134,14 @@ public class Character2 : MonoBehaviour
 		anim.SetInteger("botAnim", 2);
 		yield return new WaitForSeconds(0.5f);
 		Destroy(gameObject);
+		// random box
+		bool isDropBox = Random.Range(0, 2) == 0 ? false : true;
+		if (isDropBox)
+		{
+			int rand = Random.Range(0, 3);
+			GameObject box = Instantiate(listBoxSecretBullet[rand], new Vector3(transform.position.x + 2, transform.position.y + 2, transform.position.z), Quaternion.identity);
+			Destroy(box, 5f);
+		}
 	}
 
 	public void TakeDamage()

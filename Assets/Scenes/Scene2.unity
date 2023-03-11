@@ -1575,6 +1575,22 @@ PrefabInstance:
       propertyPath: xSpeedBullet
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     - target: {fileID: 990146827318482985, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6570,6 +6586,22 @@ PrefabInstance:
       propertyPath: xSpeedBullet
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     - target: {fileID: 990146827318482985, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6789,7 +6821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6847,6 +6879,22 @@ PrefabInstance:
       propertyPath: xStartPoint
       value: 184.24
       objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
 --- !u!1 &450522136
@@ -7695,7 +7743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7753,6 +7801,22 @@ PrefabInstance:
       propertyPath: xStartPoint
       value: 121.29
       objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
 --- !u!1 &495572799
@@ -9764,7 +9828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9822,6 +9886,22 @@ PrefabInstance:
       propertyPath: xStartPoint
       value: 156.2
       objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
 --- !u!1001 &637790251
@@ -10139,6 +10219,22 @@ PrefabInstance:
       propertyPath: xSpeedBullet
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     - target: {fileID: 990146827318482985, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -10490,7 +10586,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6160388623918880003, guid: 3b7ae7716e6517c4186c72a72dd39548, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 6160388623918880003, guid: 3b7ae7716e6517c4186c72a72dd39548, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12144,6 +12240,22 @@ PrefabInstance:
       propertyPath: xSpeedBullet
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     - target: {fileID: 990146827318482985, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13187,6 +13299,22 @@ PrefabInstance:
       propertyPath: xSpeedBullet
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     - target: {fileID: 990146827318482985, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -19572,7 +19700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19630,6 +19758,22 @@ PrefabInstance:
       propertyPath: xStartPoint
       value: 214.32
       objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
 --- !u!1 &1289749087
@@ -20504,6 +20648,22 @@ PrefabInstance:
       propertyPath: xSpeedBullet
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     - target: {fileID: 990146827318482985, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -20550,7 +20710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4299392845097807515, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 4299392845097807515, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21672,7 +21832,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21730,6 +21890,22 @@ PrefabInstance:
       propertyPath: xStartPoint
       value: 62.44
       objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
 --- !u!1 &1435710807
@@ -21970,7 +22146,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6160388623918880003, guid: 3b7ae7716e6517c4186c72a72dd39548, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 6160388623918880003, guid: 3b7ae7716e6517c4186c72a72dd39548, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22517,6 +22693,22 @@ PrefabInstance:
       propertyPath: xSpeedBullet
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     - target: {fileID: 990146827318482985, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -23232,7 +23424,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1509125613
 MonoBehaviour:
@@ -23739,6 +23931,10 @@ MonoBehaviour:
   timeSpawn: 0.3
   bulletPositionSpawn: {fileID: 537983951}
   bulletObject: {fileID: 6858054559639238218, guid: 969751b9832bc7246ba8f9c4fb5189db, type: 3}
+  listBullet:
+  - {fileID: 6858054559639238218, guid: 969751b9832bc7246ba8f9c4fb5189db, type: 3}
+  - {fileID: 1190140092369709635, guid: 9df5e8df71f44fa41b87b93b898e5da2, type: 3}
+  - {fileID: 7144369754043643852, guid: 22e21a7554f1e914abcb7b132f6eae85, type: 3}
 --- !u!50 &1557710669
 Rigidbody2D:
   serializedVersion: 4
@@ -35184,7 +35380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093357, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35242,6 +35438,22 @@ PrefabInstance:
       propertyPath: xStartPoint
       value: 204.28
       objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[0]
+      value: 
+      objectReference: {fileID: 7922846308608609106, guid: 12f594ef259bf234a8bdd92925770422, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[1]
+      value: 
+      objectReference: {fileID: 3641544698133166765, guid: 2291c1af0c589ac44b1c2cda413cfb77, type: 3}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: listBoxSecretBullet.Array.data[2]
+      value: 
+      objectReference: {fileID: 636385508187660748, guid: 6e65178618dac2743b55bc4b6d55899e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
 --- !u!1 &1801796204

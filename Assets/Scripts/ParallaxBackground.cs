@@ -41,7 +41,6 @@ public class ParallaxBackground : MonoBehaviour
 	private void GetDistance()
 	{
 		currentDis = cameraTransform.transform.position.x - transform.localPosition.x;
-		Debug.Log(currentDis);
 	}
 	//[SerializeField] float parallaxEffect = 0.5f;
 	//Transform cameraTransform;

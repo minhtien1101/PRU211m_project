@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -16,7 +18,10 @@ public class Player : MonoBehaviour
 	Transform bulletPositionSpawn;
 	[SerializeField]
 	GameObject bulletObject;
+	[SerializeField]
+	List<GameObject> listBullet;
 
+	int indexBulletObject = 0;
 	Rigidbody2D rigid;
 	SpriteRenderer sprite;
 	Animator animat;
@@ -33,6 +38,13 @@ public class Player : MonoBehaviour
 		animat = GetComponent<Animator>();
 		ausController = FindObjectOfType<AudioController>();
 		uiManager = FindObjectOfType<UIManager>();
+
+		if (SceneManager.GetActiveScene().name != "Scene1")
+		{
+			indexBulletObject = PlayerPrefs.GetInt("indexBulletObject");
+		}
+		bulletObject = listBullet[indexBulletObject];
+		PlayerPrefs.SetInt("indexBulletObject", indexBulletObject);
 	}
 
 	// Update is called once per frame
@@ -60,7 +72,7 @@ public class Player : MonoBehaviour
 				bulletPositionSpawn.localPosition = new Vector3(xPos, bulletPositionSpawn.localPosition.y, bulletPositionSpawn.localPosition.z);
 			}
 			transform.position += Vector3.right * xDirection * xSpeed * Time.deltaTime;
-			
+
 		}
 		// jump
 		if (Input.GetKeyDown(KeyCode.Space) && !isJump)
@@ -109,10 +121,30 @@ public class Player : MonoBehaviour
 		}
 		else if (collision.gameObject.CompareTag("Enemy"))
 		{
-			Debug.Log("Đã va chạm với địch");
 			ausController.PlayGameoverSound();
 			uiManager.ShowPanelGameOver();
 			Time.timeScale = 0;
+		}
+		else if (collision.gameObject.CompareTag("Box1"))
+		{
+			indexBulletObject = 0;
+			bulletObject = listBullet[indexBulletObject];
+			PlayerPrefs.SetInt("indexBulletObject", indexBulletObject);
+			Destroy(collision.gameObject);
+		}
+		else if (collision.gameObject.CompareTag("Box2"))
+		{
+			indexBulletObject = 1;
+			bulletObject = listBullet[indexBulletObject];
+			PlayerPrefs.SetInt("indexBulletObject", indexBulletObject);
+			Destroy(collision.gameObject);
+		}
+		else if (collision.gameObject.CompareTag("Box3"))
+		{
+			indexBulletObject = 2;
+			bulletObject = listBullet[indexBulletObject];
+			PlayerPrefs.SetInt("indexBulletObject", indexBulletObject);
+			Destroy(collision.gameObject);
 		}
 	}
 
@@ -120,7 +152,6 @@ public class Player : MonoBehaviour
 	{
 		if (collision.gameObject.CompareTag("BulletEnemy"))
 		{
-			Debug.Log("Dính đạn địch");
 			Destroy(collision.gameObject);
 			ausController.PlayGameoverSound();
 			uiManager.ShowPanelGameOver();
@@ -128,17 +159,16 @@ public class Player : MonoBehaviour
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
 		{
-			Debug.Log("Đã va chạm với deathzone");
 			ausController.PlayGameoverSound();
 			uiManager.ShowPanelGameOver();
 			Time.timeScale = 0;
 		}
 		else if (collision.gameObject.CompareTag("Enemy"))
 		{
-			Debug.Log("Đã va chạm với địch");
 			ausController.PlayGameoverSound();
 			uiManager.ShowPanelGameOver();
 			Time.timeScale = 0;
 		}
 	}
+
 }

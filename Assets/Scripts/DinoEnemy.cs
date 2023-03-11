@@ -13,6 +13,7 @@ public class DinoEnemy : MonoBehaviour
 	[SerializeField] float xSpeedBullet;
 	[SerializeField] float xStartPoint;
 	[SerializeField] float xEndPoint;
+	[SerializeField] List<GameObject> listBoxSecretBullet;
 	SpriteRenderer sprt;
 	Animator anim;
 	bool isShooting;
@@ -102,6 +103,7 @@ public class DinoEnemy : MonoBehaviour
 			Debug.Log("Dính đạn của player");
 			// destroy bullet player
 			Destroy(collision.gameObject);
+			
 			isGetBulletPlayer = true;
 			// destroy enemy after 0.5s
 			StartCoroutine(StartCountDie());
@@ -116,5 +118,13 @@ public class DinoEnemy : MonoBehaviour
 		anim.SetInteger("dinoAnim", 2);
 		yield return new WaitForSeconds(0.5f);
 		Destroy(gameObject);
+		// random box secret
+		bool isDropBox = Random.Range(0, 2) == 0 ? false : true;
+		if (isDropBox)
+		{
+			int rand = Random.Range(0, 3);
+			GameObject box = Instantiate(listBoxSecretBullet[rand], new Vector3(transform.position.x + 2, transform.position.y + 2, transform.position.z), Quaternion.identity);
+			Destroy(box, 5f);
+		}
 	}
 }
