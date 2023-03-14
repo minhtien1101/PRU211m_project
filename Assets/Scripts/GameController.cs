@@ -23,6 +23,10 @@ public class GameController : MonoBehaviour
 		menuPanel.SetActive(true);
 		tutorialPanel.SetActive(false);
 	}
+	public void Quit()
+	{
+		Application.Quit();
+	}
 
 	
 }

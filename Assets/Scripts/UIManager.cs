@@ -22,5 +22,10 @@ public class UIManager : MonoBehaviour
 		Time.timeScale = 1.0f;
 		SceneManager.LoadScene("Scene1");
 	}
+	public void BackToHome()
+	{
+		Time.timeScale = 1.0f;
+		SceneManager.LoadScene("Scene0");
+	}
 	
 }
