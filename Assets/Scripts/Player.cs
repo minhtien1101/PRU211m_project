@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -29,7 +26,7 @@ public class Player : MonoBehaviour
 	bool isShooting;
 	AudioController ausController;
 	UIManager uiManager;
-	float button = 0;
+	float xDirectionButtonDown = 0;
 	bool JumpButtonDown = false;
 	bool buttonFireDown = false;
 	// Start is called before the first frame update
@@ -53,7 +50,7 @@ public class Player : MonoBehaviour
 	void Update()
 	{
 		// left = -1, right = 1, default = 0
-		float xDirection = Input.GetAxisRaw("Horizontal") ==0? button: Input.GetAxisRaw("Horizontal");
+		float xDirection = Input.GetAxisRaw("Horizontal") == 0 ? xDirectionButtonDown : Input.GetAxisRaw("Horizontal");
 		// move left, right
 		if (xDirection < 0 || xDirection > 0)
 		{
@@ -177,20 +174,20 @@ public class Player : MonoBehaviour
 
 	public void ButtonRightDown()
 	{
-		button = 1;
+		xDirectionButtonDown = 1;
 	}
 	public void ButtonRightUp()
 	{
-		button = 0;
+		xDirectionButtonDown = 0;
 	}
 
 	public void ButtonLeftDown()
 	{
-		button = -1;
+		xDirectionButtonDown = -1;
 	}
 	public void ButtonLeftUp()
 	{
-		button = 0;
+		xDirectionButtonDown = 0;
 	}
 
 	public void ButtonJumpDown()
@@ -203,7 +200,9 @@ public class Player : MonoBehaviour
 	}
 	public void ButtonFireDown()
 	{
-		isShooting = false;
-		buttonFireDown = true;
+		if (!isShooting)
+		{
+			buttonFireDown = true;
+		}
 	}
 }

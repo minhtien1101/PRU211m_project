@@ -59,6 +59,7 @@
     <Compile Include="Assets\Masalimov Ilnur\Pixet Robot\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\ParallaxBackground.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\BackgroundMove.cs" />
     <Compile Include="Assets\Masalimov Ilnur\Pixet Robot\Scripts\Character2.cs" />
     <Compile Include="Assets\Scripts\LoadNextLevel.cs" />
     <Compile Include="Assets\Scripts\AudioController.cs" />
