@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -28,7 +29,9 @@ public class Player : MonoBehaviour
 	bool isShooting;
 	AudioController ausController;
 	UIManager uiManager;
-
+	float button = 0;
+	bool JumpButtonDown = false;
+	bool buttonFireDown = false;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -50,7 +53,7 @@ public class Player : MonoBehaviour
 	void Update()
 	{
 		// left = -1, right = 1, default = 0
-		float xDirection = Input.GetAxisRaw("Horizontal");
+		float xDirection = Input.GetAxisRaw("Horizontal") ==0? button: Input.GetAxisRaw("Horizontal");
 		// move left, right
 		if (xDirection < 0 || xDirection > 0)
 		{
@@ -74,7 +77,7 @@ public class Player : MonoBehaviour
 
 		}
 		// jump
-		if (Input.GetKeyDown(KeyCode.Space) && !isJump)
+		if ((Input.GetKeyDown(KeyCode.Space) || JumpButtonDown) && !isJump)
 		{
 			rigid.AddForce(Vector2.up * jump);
 			isJump = true;
@@ -88,10 +91,11 @@ public class Player : MonoBehaviour
 			animat.SetInteger("playerAni", 0);
 		}
 		// shooting
-		if (Input.GetKeyDown(KeyCode.R) && !isShooting)
+		if ((Input.GetKeyDown(KeyCode.R) || buttonFireDown) && !isShooting)
 		{
 			ausController.PlayShootingSound();
 			isShooting = true;
+			buttonFireDown = false;
 			if (sprite.flipX)
 			{
 				Instantiate(bulletObject, bulletPositionSpawn.position, Quaternion.Euler(new Vector3(0, 0, -90)));
@@ -170,4 +174,36 @@ public class Player : MonoBehaviour
 		}
 	}
 
+
+	public void ButtonRightDown()
+	{
+		button = 1;
+	}
+	public void ButtonRightUp()
+	{
+		button = 0;
+	}
+
+	public void ButtonLeftDown()
+	{
+		button = -1;
+	}
+	public void ButtonLeftUp()
+	{
+		button = 0;
+	}
+
+	public void ButtonJumpDown()
+	{
+		JumpButtonDown = true;
+	}
+	public void ButtonJumpUp()
+	{
+		JumpButtonDown = false;
+	}
+	public void ButtonFireDown()
+	{
+		isShooting = false;
+		buttonFireDown = true;
+	}
 }
