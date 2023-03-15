@@ -107,10 +107,9 @@ public class Character : MonoBehaviour
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.gameObject.CompareTag("BulletPlayer"))
+		if (collision.gameObject.CompareTag("BulletPlayer") && !isDie)
 		{
 			isDie = true;
-			Debug.Log("Dính đạn của player");
 			// destroy bullet player
 			Destroy(collision.gameObject);
 			// destroy enemy
@@ -125,7 +124,7 @@ public class Character : MonoBehaviour
 	private IEnumerator StartCountDie()
 	{
 		anim.SetInteger("botAnim", 2);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(1f);
 		Destroy(gameObject);
 		// random box
 		bool isDropBox = Random.Range(0, 2) == 0 ? false : true;
@@ -133,7 +132,7 @@ public class Character : MonoBehaviour
 		{
 			int rand = Random.Range(0, 3);
 			GameObject box = Instantiate(listBoxSecretBullet[rand], new Vector3(transform.position.x + 2, transform.position.y + 2, transform.position.z), Quaternion.identity);
-			Destroy(box, 5f);
+			Destroy(box, 60f);
 		}
 	}
 }

@@ -34,7 +34,7 @@ public class Character2 : MonoBehaviour
 	{
 		if (isDie) return;
 		//saw player
-		if (Vector3.Distance(player.transform.position, transform.position) <= 10f)
+		if (Vector3.Distance(player.transform.position, transform.position) <= 11f)
 		{
 			anim.SetInteger("botAnim", 0);
 			if (player.transform.position.x < transform.position.x)
@@ -110,7 +110,7 @@ public class Character2 : MonoBehaviour
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.gameObject.CompareTag("BulletPlayer"))
+		if (collision.gameObject.CompareTag("BulletPlayer") && !isDie)
 		{
 			TakeDamage();
 			// destroy bullet player
@@ -132,7 +132,7 @@ public class Character2 : MonoBehaviour
 	private IEnumerator StartCountDie()
 	{
 		anim.SetInteger("botAnim", 2);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(1f);
 		Destroy(gameObject);
 		// random box
 		bool isDropBox = Random.Range(0, 2) == 0 ? false : true;
@@ -140,7 +140,7 @@ public class Character2 : MonoBehaviour
 		{
 			int rand = Random.Range(0, 3);
 			GameObject box = Instantiate(listBoxSecretBullet[rand], new Vector3(transform.position.x + 2, transform.position.y + 2, transform.position.z), Quaternion.identity);
-			Destroy(box, 5f);
+			Destroy(box, 60f);
 		}
 	}
 

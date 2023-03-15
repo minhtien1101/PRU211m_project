@@ -17,7 +17,7 @@ public class DinoEnemy : MonoBehaviour
 	SpriteRenderer sprt;
 	Animator anim;
 	bool isShooting;
-	bool isGetBulletPlayer;
+	bool isDie;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -28,7 +28,7 @@ public class DinoEnemy : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (isGetBulletPlayer) return;
+		if (isDie) return;
 		// saw player
 		if (Vector3.Distance(player.transform.position, transform.position) <= 9f)
 		{
@@ -98,14 +98,13 @@ public class DinoEnemy : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if (collision.gameObject.CompareTag("BulletPlayer"))
+		if (collision.gameObject.CompareTag("BulletPlayer") && !isDie)
 		{
-			Debug.Log("Dính đạn của player");
 			// destroy bullet player
 			Destroy(collision.gameObject);
-			
-			isGetBulletPlayer = true;
-			// destroy enemy after 0.5s
+
+			isDie = true;
+			// destroy enemy after 1s
 			StartCoroutine(StartCountDie());
 		}
 		else if (collision.gameObject.CompareTag("DeathZone"))
@@ -116,7 +115,7 @@ public class DinoEnemy : MonoBehaviour
 	private IEnumerator StartCountDie()
 	{
 		anim.SetInteger("dinoAnim", 2);
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(1f);
 		Destroy(gameObject);
 		// random box secret
 		bool isDropBox = Random.Range(0, 2) == 0 ? false : true;
@@ -124,7 +123,7 @@ public class DinoEnemy : MonoBehaviour
 		{
 			int rand = Random.Range(0, 3);
 			GameObject box = Instantiate(listBoxSecretBullet[rand], new Vector3(transform.position.x + 2, transform.position.y + 2, transform.position.z), Quaternion.identity);
-			Destroy(box, 5f);
+			Destroy(box, 60f);
 		}
 	}
 }

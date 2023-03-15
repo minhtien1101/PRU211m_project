@@ -57,6 +57,9 @@ public class Player : MonoBehaviour
 			if (!isJump)
 			{
 				animat.SetInteger("playerAni", 1);
+			} else
+			{
+				animat.SetInteger("playerAni", 2);
 			}
 			if (xDirection < 0)
 			{
@@ -72,6 +75,9 @@ public class Player : MonoBehaviour
 			}
 			transform.position += Vector3.right * xDirection * xSpeed * Time.deltaTime;
 
+		} else
+		{
+			animat.SetInteger("playerAni", 0);
 		}
 		// jump
 		if ((Input.GetKeyDown(KeyCode.Space) || JumpButtonDown) && !isJump)
@@ -79,14 +85,14 @@ public class Player : MonoBehaviour
 			rigid.AddForce(Vector2.up * jump);
 			isJump = true;
 		}
-		if (isJump && xDirection != 0)
-		{
-			animat.SetInteger("playerAni", 2);
-		}
-		if (xDirection == 0 && !isJump)
-		{
-			animat.SetInteger("playerAni", 0);
-		}
+		//if (isJump && xDirection != 0)
+		//{
+		//	animat.SetInteger("playerAni", 2);
+		//}
+		//if (xDirection == 0 && !isJump)
+		//{
+		//	animat.SetInteger("playerAni", 0);
+		//}
 		// shooting
 		if ((Input.GetKeyDown(KeyCode.R) || buttonFireDown) && !isShooting)
 		{
@@ -101,7 +107,6 @@ public class Player : MonoBehaviour
 			{
 				Instantiate(bulletObject, bulletPositionSpawn.position, Quaternion.Euler(new Vector3(0, 0, 90)));
 			}
-			Debug.Log("Ban da ban");
 			StartCoroutine(ShootingCountDown(timeSpawn));
 		}
 
@@ -111,6 +116,15 @@ public class Player : MonoBehaviour
 	{
 		yield return new WaitForSeconds(time);
 		isShooting = false;
+	}
+
+	private void OnCollisionExit2D(Collision2D collision)
+	{
+		// player not stand on ground
+		if (collision.gameObject.CompareTag("Ground"))
+		{
+			isJump = true;
+		}
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)

@@ -1553,11 +1553,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeed
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: timeFire
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xEndPoint
@@ -1573,7 +1573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeedBullet
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: listBoxSecretBullet.Array.size
@@ -3707,7 +3707,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: -200}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233823337
 MonoBehaviour:
@@ -6733,11 +6733,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeed
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: timeFire
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xEndPoint
@@ -6753,7 +6753,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeedBullet
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: listBoxSecretBullet.Array.size
@@ -7038,7 +7038,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xSpeed
-      value: 0.8
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: timeFire
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xEndPoint
@@ -7645,8 +7649,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 300, y: -200}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 350, y: -200}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &483447018
 MonoBehaviour:
@@ -8108,7 +8112,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xSpeed
-      value: 1
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: timeFire
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xEndPoint
@@ -10193,7 +10201,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xSpeed
-      value: 0.8
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: timeFire
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xEndPoint
@@ -10514,11 +10526,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeed
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: timeFire
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xEndPoint
@@ -10534,7 +10546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeedBullet
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: listBoxSecretBullet.Array.size
@@ -10928,7 +10940,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -150, y: -200}
-  m_SizeDelta: {x: 300, y: 300}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &685889003
 MonoBehaviour:
@@ -12703,11 +12715,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeed
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: timeFire
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xEndPoint
@@ -12723,7 +12735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeedBullet
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: listBoxSecretBullet.Array.size
@@ -13762,11 +13774,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeed
-      value: 1.5
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: timeFire
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xEndPoint
@@ -13782,7 +13794,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeedBullet
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: listBoxSecretBullet.Array.size
@@ -15452,8 +15464,8 @@ GameObject:
   - component: {fileID: 962370607}
   - component: {fileID: 962370606}
   m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20233,7 +20245,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xSpeed
-      value: 0.8
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: timeFire
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xEndPoint
@@ -20332,7 +20348,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1284267748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21191,11 +21207,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeed
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: timeFire
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xEndPoint
@@ -21211,7 +21227,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeedBullet
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: listBoxSecretBullet.Array.size
@@ -21890,7 +21906,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1370425402
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22525,7 +22541,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xSpeed
-      value: 1
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: timeFire
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xEndPoint
@@ -23450,11 +23470,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeed
-      value: 1
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: timeFire
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xEndPoint
@@ -23470,7 +23490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: xSpeedBullet
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 824951096605298547, guid: 5e03e16d83dc8784cb75c73a0396223b, type: 3}
       propertyPath: listBoxSecretBullet.Array.size
@@ -25575,7 +25595,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1602535991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -36288,7 +36308,11 @@ PrefabInstance:
       objectReference: {fileID: 1557710665}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xSpeed
-      value: 0.8
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
+      propertyPath: timeFire
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 409885818994093359, guid: fb1860975a5226740ab4b633c8baa663, type: 3}
       propertyPath: xEndPoint
@@ -36526,7 +36550,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: 
 --- !u!222 &1823806423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -39205,8 +39229,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -500, y: -200}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: -550, y: -200}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2045512370
 MonoBehaviour:
