@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		Application.targetFrameRate = 300;
 		rigid = GetComponent<Rigidbody2D>();
 		sprite = GetComponent<SpriteRenderer>();
 		animat = GetComponent<Animator>();
@@ -57,7 +58,8 @@ public class Player : MonoBehaviour
 			if (!isJump)
 			{
 				animat.SetInteger("playerAni", 1);
-			} else
+			}
+			else
 			{
 				animat.SetInteger("playerAni", 2);
 			}
@@ -75,7 +77,8 @@ public class Player : MonoBehaviour
 			}
 			transform.position += Vector3.right * xDirection * xSpeed * Time.deltaTime;
 
-		} else
+		}
+		else
 		{
 			animat.SetInteger("playerAni", 0);
 		}

@@ -2513,7 +2513,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Super Hero
+  m_Text: Strong Warrior
 --- !u!222 &1778020734
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3101,7 +3101,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "- Press the left and right arrows to move the character\n\n- Press Spacebar
     to jump\n\n- Press the R key to shoot bullets\n\n- Control the character to overcome
-    difficult terrain,            \n\n  dodge traps and kill enemies \n"
+    difficult terrain,            \n\n  dodge traps and kill enemies \n\n- When the
+    enemy dies, will randomly drop ammo items for guns."
 --- !u!222 &2113526508
 CanvasRenderer:
   m_ObjectHideFlags: 0
